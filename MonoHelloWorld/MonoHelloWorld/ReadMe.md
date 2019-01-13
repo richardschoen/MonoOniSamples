@@ -34,5 +34,5 @@ Change to the selected app folder where EXE is located:<br>
 Call the following command line to build the Visual Studio Solution natively on i:<br>
 `xbuild /p:CscToolExe=mcs`
 
-If all ran scuccessfully you should have a compiled EXE or DLL in your build dir.
+If all ran successfully you should have a compiled EXE or DLL in your build dir.
 
