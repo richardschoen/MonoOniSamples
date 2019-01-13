@@ -22,6 +22,7 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DLTSTDOUT(*YES)                             
 ```
 **Running db2 Query Example:**<br>
+Note: No special escaping is required on SQL statement. Handled by PaseCommandHelper class.<br>
 ```
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
      EXEFILE(MonoRunPase.exe)                 
@@ -30,6 +31,7 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DLTSTDOUT(*YES)                             
 ```
 **Running CL command Example:**<br>
+Note: No special escaping is required on CL command. Handled by PaseCommandHelper class.<br>
 ```
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
      EXEFILE(MonoRunPase.exe)                 
@@ -38,6 +40,7 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DLTSTDOUT(*YES)                             
 ```
 **Running Pase command with arguments Example:**<br>
+Note: Notice that the PASE command/program to run is in P2 and the command arguments go in P3. They must be separated for PASE calls.<br>
 ```
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
      EXEFILE(MonoRunPase.exe)                 
@@ -46,7 +49,7 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DLTSTDOUT(*YES)                             
 ```
 **Running QSHELL command Example:**<br>
-```
+Note: Notice that the entire Qshell command/program to run plus arguments are in P2. They are NOT separated for Qshell calls.<br>```
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
      EXEFILE(MonoRunPase.exe)                 
      ARGS('qsh' 'ls /tmp ' ' ' ' ' ' ')                              
