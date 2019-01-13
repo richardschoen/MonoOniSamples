@@ -5,7 +5,8 @@ This example is meant to show a basic structure for creating C# console apps
 that run on IBM i.<br>
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-`mono MonoHelloWold "P1" "P2" "P3-true/false"`
+`cd /MonoOniSamplses/MonoHelloWorld (or the directory where the EXE was created.)`
+`mono MonoHelloWorld.exe "P1" "P2" "P3-true/false"`
 
 **Running the program using the MONO CL command**<br>
 ```
@@ -27,8 +28,8 @@ version of a class library or other DLL being used without worrying about DLL ve
 Start pase command line terminal:<br>
 `CALL QP2TERM`
 
-Change to the selected app folder:<br>
-`cd /MonoOniSamplses/MonoRunPase`
+Change to the selected app folder where EXE is located:<br>
+`cd /MonoOniSamples/MonoHelloWorld`
 
 Call the following command line to build the Visual Studio Solution natively on i:<br>
 `xbuild /p:CscToolExe=mcs`
