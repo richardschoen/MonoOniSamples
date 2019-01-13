@@ -1,8 +1,8 @@
 ﻿# MonoRunPase
 
-**Overview**
+**Overview**<br>
 This example is meant to show how to interact with PASE and Qshell commands from 
-a .Net application. 
+a .Net application.<br>
 
 -You can run an IBM i CL system commmand.<br>
 -You can run the Qshell db2 CLI and export data to CSV,XML or JSON.<br>
@@ -10,7 +10,8 @@ a .Net application.
 -You can run a Qshell command line. <br>
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-mono RunPaseCommand "Action" "Command" "Arguments" "DB2OutputType-CSV,JSON,XML" "DB2IFSOutputFile-Ex: /tmp/monotest.txt"
+cd /MonoOniSamplses/MonoRunPase (or the directory where the EXE was created.)
+mono MonoRunPase.exe "Action" "Command" "Arguments" "DB2OutputType-CSV,JSON,XML" "DB2IFSOutputFile-Ex: /tmp/monotest.txt"<br>
 
 **Running the program using the MONO CL command**<br>
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
