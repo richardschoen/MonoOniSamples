@@ -49,7 +49,8 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DLTSTDOUT(*YES)                             
 ```
 **Running QSHELL command Example:**<br>
-Note: Notice that the entire Qshell command/program to run plus arguments are in P2. They are NOT separated for Qshell calls.<br>```
+Note: Notice that the entire Qshell command/program to run plus arguments are in P2. They are NOT separated for Qshell calls.<br>
+```
 MONO WORKDIR('/MonoOniSamples/MonoRunPase')   
      EXEFILE(MonoRunPase.exe)                 
      ARGS('qsh' 'ls /tmp ' ' ' ' ' ' ')                              
