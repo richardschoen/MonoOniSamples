@@ -4,12 +4,12 @@
 This example is meant to show how to interact with PASE and Qshell commands from 
 a .Net application. 
 
--You can run an IBM i CL system commmand
--You can run the Qshell db2 CLI and export data to CSV,XML or JSON.
--You can run a Pase command with parameters.
--You can run a Qshell command line. 
+-You can run an IBM i CL system commmand.<br>
+-You can run the Qshell db2 CLI and export data to CSV,XML or JSON.<br>
+-You can run a Pase command with parameters.<br>
+-You can run a Qshell command line. <br>
 
-**Running the program from a PASE or QSHELL command line screen**
+**Running the program from a PASE or QSHELL command line screen**<br>
 mono RunPaseCommand "Action" "Command" "Arguments" "DB2OutputType-CSV,JSON,XML" "DB2IFSOutputFile-Ex: /tmp/monotest.txt"
 
 **Running the program using the MONO CL command**<br>
@@ -47,7 +47,7 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
      DSPSTDOUT(*YES)                             
      DLTSTDOUT(*YES)                             
 
-**Compiling and building this program solution**
+**Compiling and building this program solution**<br>
 
 1.) The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
 and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
