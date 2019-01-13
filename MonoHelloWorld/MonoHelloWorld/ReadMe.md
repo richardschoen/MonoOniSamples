@@ -8,12 +8,13 @@ that run on IBM i.
 `mono MonoHelloWold "P1" "P2" "P3-true/false"`
 
 **Running the program using the MONO CL command**<br>
-`MONO WORKDIR('/MonoOniSamples/MonoHelloWorld')   
+```
+MONO WORKDIR('/MonoOniSamples/MonoHelloWorld')   
      EXEFILE(MonoHelloWorld.exe)                 
      ARGS('A' 'B' 'true')                              
      DSPSTDOUT(*YES)                             
-     DLTSTDOUT(*YES)`                             
-
+     DLTSTDOUT(*YES)
+```
 Compiling and building this program solution
 
 1.) The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
