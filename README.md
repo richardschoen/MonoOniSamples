@@ -3,6 +3,11 @@
 **Mono on IBM i Code Samples**<br>
 This repository will be used to publish .Net and IBM i code samples related to running .Net on IBM i.<br>
 
+**Mono on i**
+You will first need to have the Mono on i environment installed on your IBM i.<br>
+Mono for IBM i binary save file distribution can be downloaded from here:<br>
+https://github.com/MonoOni/binarydist
+
 **Mono on i Library**
 If you want to easily call .Net applications on IBM i and integrate into standard job streams such as CL or RPG, download and install this library on your IBM i as well.<br>
 https://github.com/richardschoen/MonoOniLibrary
