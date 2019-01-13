@@ -6,7 +6,7 @@ a .Net application.<br>
 
 -You can run an IBM i CL system commmand.<br>
 -You can run the Qshell db2 CLI and export data to CSV,XML or JSON.<br>
- or you can return the db2 resultset as a DataTable in your .Net code to 
+ You can also return the db2 resultset as a DataTable in your .Net code to 
  be used for additional application processing. Using the db2 cli command you don't
  need an external database driver to interact with the database.
 -You can run a Pase command with parameters.<br>
@@ -72,10 +72,10 @@ version of a class library or other DLL being used without worrying about DLL ve
 Start pase command line terminal:<br>
 `CALL QP2TERM`
 
-Change to the selected app folder where EXE is located:
+Change to the selected app folder where EXE is located:<br>
 `cd /MonoOniSamples/MonoRunPase`
 
-Call the following command line to build the Visual Studio Solution natively on i:
+Call the following command line to build the Visual Studio Solution natively on i:<br>
 `xbuild /p:CscToolExe=mcs`
 
 If all ran scuccessfully you should have a compiled EXE or DLL in your build dir.
