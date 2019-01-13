@@ -12,19 +12,3 @@ Feature Todos
 -Convert DB2 results to CSV, XML or JSON.
 
 
-Compiling and building this program solution
-
-1.) The easiest way to build this .Net code for IBMi is to compile locally in Visual Studio
-and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
-I typically put each app and DLL files in its own directory. This way each app can have different
-version of a class library or other DLL being used without worrying about DLL versioning issues.
-
-2.) An alternative option is to build the solution from the PASE command line:
-
-Start pase command line terminal:
-CALL QP2TERM
-
-Change to the selected app folder:
-cd /monoisamples/MonoRunPase
-
-Call the following command line to build the Visual Studio Solution natively on i:
