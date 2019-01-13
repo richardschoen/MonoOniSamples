@@ -6,6 +6,9 @@ a .Net application.<br>
 
 -You can run an IBM i CL system commmand.<br>
 -You can run the Qshell db2 CLI and export data to CSV,XML or JSON.<br>
+ or you can return the db2 resultset as a DataTable in your .Net code to 
+ be used for additional application processing. Using the db2 cli command you don't
+ need an external database driver to interact with the database.
 -You can run a Pase command with parameters.<br>
 -You can run a Qshell command line. <br>
 
