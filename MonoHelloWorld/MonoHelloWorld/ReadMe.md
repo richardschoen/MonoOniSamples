@@ -5,7 +5,7 @@ This example is meant to show a basic structure for creating C# console apps
 that run on IBM i.<br>
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-`cd /MonoOniSamplses/MonoHelloWorld (or the directory where the EXE was created.)`
+`cd /MonoOniSamples/MonoHelloWorld (or the directory where the EXE was created.)`
 `mono MonoHelloWorld.exe "P1" "P2" "P3-true/false"`
 
 **Running the program using the MONO CL command**<br>

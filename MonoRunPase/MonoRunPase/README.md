@@ -13,7 +13,7 @@ a .Net application.<br>
 -You can run a Qshell command line. <br>
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-`cd /MonoOniSamplses/MonoRunPase (or the directory where the EXE was created.)`
+`cd /MonoOniSamples/MonoRunPase (or the directory where the EXE was created.)`
 `mono MonoRunPase.exe "Action" "Command" "Arguments" "DB2OutputType-CSV,JSON,XML" "DB2IFSOutputFile-Ex: /tmp/monotest.txt"`
 
 **Running the program using the MONO CL command**<br>
