@@ -18,7 +18,7 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunP
 
 
 **Installing Samples in IFS Using Git**<br>
-You can download the zip file form github and unzip Visual Studio projects or place in the IFS by using the following command sequences.<br>
+You can download the zip file form github and unzip Visual Studio projects or place in the IFS by using the following command sequences to clone the repository.<br>
 
 **Start pase command line terminal:*<br>
 `CALL QP2TERM`
@@ -31,3 +31,4 @@ You can download the zip file form github and unzip Visual Studio projects or pl
 
 If all ran successfully you should have a new folder named /MonoOniSamples available on your IFS.<br>
 
+ 
