@@ -62,12 +62,14 @@ MONO WORKDIR('/MonoOniSamples/MonoRunPase')
 ```
 **Compiling and building this program solution**<br>
 
-1.) The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
+**Compiling solution Using Visual Studio**<br>
+The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
 and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
 I typically put each app and DLL files in its own directory. This way each app can have different
 version of a class library or other DLL being used without worrying about DLL versioning issues.
 
-2.) An alternative option is to build the solution from the PASE command line:
+**Compiling solution using PASE command line**<br>
+An alternative option is to build the solution from the PASE command line:<br>
 
 Start pase command line terminal:<br>
 `CALL QP2TERM`
@@ -78,6 +80,7 @@ Change to the selected app folder where EXE is located:<br>
 Call the following command line to build the Visual Studio Solution natively on i:<br>
 `xbuild /p:CscToolExe=mcs`
 
-If all ran successfully you should have a compiled EXE or DLL in your build dir.
+If all ran successfully you should have a compiled EXE or DLL in your build dir of:<br>
+`/MonoOniSamples/MonoRunPase/MonoRunPase/bin/Debug`
 
 
