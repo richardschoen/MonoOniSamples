@@ -6,8 +6,9 @@ Mono does not correctly observe the IBMi or PASE timezone settings so we need to
 environment variable named: TZ to set the desired local timezone before any date/time functions are called.
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-`cd /MonoOniSamples/MonoListTimeZones (or the directory where the EXE was created.)`
-`mono MonoHelloWorld.exe`
+`cd /MonoOniSamples/MonoListTimeZones/MonoListTimeZones/bin/Debug (or the directory where the EXE was created.)`
+
+`mono MonoListTimeZones.exe`
 
 **Running the program using the MONO CL command**<br>
 ```

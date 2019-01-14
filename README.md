@@ -27,7 +27,6 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoListTimeZones/Mo
 **MonoRunPase** - Sample for running db2 cli, CL system commands, Qshell or PASE commands from a .Net App.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
-
 **Installing Samples in IFS Using Git**<br>
 You can download the zip file from github and unzip Visual Studio projects or place in the IFS by using the following command sequences to clone the repository.<br>
 
