@@ -16,7 +16,7 @@ MONO WORKDIR('/MonoOniSamples/MonoListTimeZones/MonoListTimeZones/bin/Debug')
      DSPSTDOUT(*YES)                             
      DLTSTDOUT(*YES)
 ```
-**Compiling and building this program solution**<br>
+**Compiling and running this program solution**<br>
 
 1.) Build the solution from the PASE command line:
 

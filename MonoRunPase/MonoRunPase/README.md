@@ -68,13 +68,20 @@ and then copy the EXE and any associated DLL files to the associated app directo
 I typically put each app and DLL files in its own directory. This way each app can have different
 version of a class library or other DLL being used without worrying about DLL versioning issues.
 
-**Compiling solution using PASE command line**<br>
-An alternative option is to build the solution from the PASE command line:<br>
+**Compiling and running this program solution**<br>
+
+1.) Build the solution from the PASE command line:
 
 Start pase command line terminal:<br>
 `CALL QP2TERM`
 
-Change to the selected app folder where EXE is located:<br>
+Set path to Mono<br>
+`PATH=/opt/mono/bin:$PATH`
+
+Export path to Mono<br>
+`export PATH`
+
+Change to the selected app folder where the Visual Studio solution .SLN file is located:<br>
 `cd /MonoOniSamples/MonoRunPase`
 
 Call the following command line to build the Visual Studio Solution natively on i:<br>
@@ -83,4 +90,16 @@ Call the following command line to build the Visual Studio Solution natively on 
 If all ran successfully you should have a compiled EXE or DLL in your build dir of:<br>
 `/MonoOniSamples/MonoRunPase/MonoRunPase/bin/Debug`
 
+Change to EXE directory:<br>
+`cd /MonoOniSamples/MonoRunPase/MonoRunPase/bin/Debug`
 
+Run EXE:<br>
+`mono MonoRunPase.exe "db2" "select * from qiws.qcustcdt" " " "CSV" "/tmp/testcsv.txt"`
+
+If all works as expected you should see a list of messages displayed on the console along with the parms.<br>
+Also CSV file /tmp/testcsv.txt should exist with the results of our query. 
+
+2.) The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
+and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
+I typically put each app and DLL files in its own directory. This way each app can have different
+version of a class library or other DLL being used without worrying about DLL versioning issues.

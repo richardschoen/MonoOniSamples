@@ -20,6 +20,9 @@ If you don't install the MONOI library you will need to call your .Net applicati
 **MonoHelloWorld** - Sample template for Mono .Net console apps<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoHelloWorld/MonoHelloWorld
 
+**MonoListTimeZones** - Sample for listing all the time zones available to a Mono .Net App since standard system values or PASE environment values don't work.<br> 
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoListTimeZones/MonoListTimeZones
+
 **MonoRunPase** - Sample for running db2 cli, CL system commands, Qshell or PASE commands from a .Net App.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
