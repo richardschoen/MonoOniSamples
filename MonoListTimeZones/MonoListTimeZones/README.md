@@ -28,10 +28,10 @@ version of a class library or other DLL being used without worrying about DLL ve
 Start pase command line terminal:<br>
 `CALL QP2TERM`
 
-Set path to Mono 
+Set path to Mono<br>
 `PATH=/opt/mono/bin:$PATH`
 
-Export path to Mono
+Export path to Mono<br>
 `export PATH`
 
 Change to the selected app folder where the Visual Studio solution .SLN file is located:<br>
@@ -42,4 +42,13 @@ Call the following command line to build the Visual Studio Solution natively on 
 
 If all ran successfully you should have a compiled EXE or DLL in your build dir of:<br>
 `/MonoOniSamples/MonoListTimeZones/MonoListTimeZones/bin/Debug`
+
+Change to EXE directory:<br>
+`cd /MonoOniSamples/MonoListTimeZones/MonoListTimeZones/bin/Debug`
+
+Run EXE:<br>
+`mono MonoListTimeZones.exe`
+
+If all works as expected you should see a list of timezones displayed on the console. 
+
 
