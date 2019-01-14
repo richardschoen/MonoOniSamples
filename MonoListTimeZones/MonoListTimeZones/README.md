@@ -3,7 +3,7 @@
 **Overview**<br>
 This example is meant to list all time zone values that you can possibly select to STDOUT.<br>
 Mono does not correctly observe the IBMi or PASE timezone settings so we need to set a local
-environment variable named: TZ to set the desired local timezone
+environment variable named: TZ to set the desired local timezone before any date/time functions are called.
 
 **Running the program from a PASE or QSHELL command line screen**<br>
 `cd /MonoOniSamples/MonoHelloWorld (or the directory where the EXE was created.)`
