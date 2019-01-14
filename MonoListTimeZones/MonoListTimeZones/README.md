@@ -47,8 +47,8 @@ Run EXE:<br>
 
 If all works as expected you should see a list of timezones displayed on the console. 
 
-2.) The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
+2.) Compiling solution Using Visual Studio:<br>
+The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
 and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
 I typically put each app and DLL files in its own directory. This way each app can have different
 version of a class library or other DLL being used without worrying about DLL versioning issues.
-
