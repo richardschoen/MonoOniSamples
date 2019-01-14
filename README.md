@@ -28,17 +28,16 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoListTimeZones/Mo
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
 **Installing Samples in IFS Using Git**<br>
-You can download the zip file from github and unzip Visual Studio projects or place in the IFS by using the following command sequences to clone the repository.<br>
+You can download the zip file from github and unzip the Visual Studio projects or install them in the IFS by using the following git command sequences to clone the repository.<br>
 
-**Start QShell or PASE command line terminal:**<br>
+**From an IBM i 5250 session, start QShell or PASE command line terminal:**<br>
 `STRQSH or CALL QP2TERM`
 
-**Change to the root folder. For this example we will be cloning code to /MonoOniSamples IFS directory:**<br>
+**Change to the root folder. For this example we will be cloning code to /MonoOniSamples IFS directory from the root directory:**<br>
 `cd /`
 
 **Call the following command line to clone the repository to /MonoOniSamples folder**<br>
 `git -c http.sslVerify=false clone --recurse-submodules https://github.com/richardschoen/MonoOniSamples.git`
 
 If all ran successfully you should have a new folder named /MonoOniSamples available on your IFS.<br>
-
  
