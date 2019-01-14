@@ -6,12 +6,12 @@ Mono does not correctly observe the IBMi or PASE timezone settings so we need to
 environment variable named: TZ to set the desired local timezone before any date/time functions are called.
 
 **Running the program from a PASE or QSHELL command line screen**<br>
-`cd /MonoOniSamples/MonoHelloWorld (or the directory where the EXE was created.)`
+`cd /MonoOniSamples/MonoListTimeZones (or the directory where the EXE was created.)`
 `mono MonoHelloWorld.exe`
 
 **Running the program using the MONO CL command**<br>
 ```
-MONO WORKDIR('/MonoOniSamples/MonoListTimeZones')   
+MONO WORKDIR('/MonoOniSamples/MonoListTimeZones/MonoListTimeZones/bin/Debug')   
      EXEFILE(MonoListTimeZones.exe)                 
      DSPSTDOUT(*YES)                             
      DLTSTDOUT(*YES)
@@ -28,9 +28,14 @@ version of a class library or other DLL being used without worrying about DLL ve
 Start pase command line terminal:<br>
 `CALL QP2TERM`
 
-Change to the selected app folder where EXE is located:<br>
-`cd /MonoOniSamples/MonoListTimeZones`
+Set path to Mono 
+`PATH=/opt/mono/bin:$PATH`
 
+Export path to Mono
+`export PATH`
+
+Change to the selected app folder where the Visual Studio solution .SLN file is located:<br>
+`cd /MonoOniSamples/MonoListTimeZones`
 
 Call the following command line to build the Visual Studio Solution natively on i:<br>
 `xbuild /p:CscToolExe=mcs`
