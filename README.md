@@ -18,20 +18,20 @@ If you don't install the MONOI library you will need to call your .Net applicati
 MonoHelloWorld - Sample template for Mono .Net console apps<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoHelloWorld/MonoHelloWorld
 
-MonoRunPase - Sample for running db2 cli, CL system comands, Qshell or PASE commands from a .Net App.<br> 
+MonoRunPase - Sample for running db2 cli, CL system commands, Qshell or PASE commands from a .Net App.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
 
 **Installing Samples in IFS Using Git**<br>
-You can download the zip file form github and unzip Visual Studio projects or place in the IFS by using the following command sequences to clone the repository.<br>
+You can download the zip file from github and unzip Visual Studio projects or place in the IFS by using the following command sequences to clone the repository.<br>
 
 **Start pase command line terminal:**<br>
 `CALL QP2TERM`
 
-**Change to the root folder. We will be cloning code to /MonoOniSamples IFS directory:**<br>
+**Change to the root folder. For this example we will be cloning code to /MonoOniSamples IFS directory:**<br>
 `cd /`
 
-**Call the following command line to clone the respository to /MonoOniSamples folder**<br>
+**Call the following command line to clone the repository to /MonoOniSamples folder**<br>
 `git -c http.sslVerify=false clone --recurse-submodules https://github.com/richardschoen/MonoOniSamples.git`
 
 If all ran successfully you should have a new folder named /MonoOniSamples available on your IFS.<br>
