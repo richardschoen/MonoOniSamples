@@ -28,3 +28,15 @@ CPYFRMIMPF FROMSTMF('/tmp/filelist.txt')
            FROMRCD(1)                              
            RMVCOLNAM(*YES)
 		   
+// Datetime error that happens right at daylight savings time 3/10/2019, 1am central.
+
+// Line that fails:
+//Console.WriteLine("TimeonInfo.Local UTC Time:" + TimeZoneInfo.ConvertTime(DateTime.Now, tz).ToString());
+// Error:
+TimeZone: America/Chicago                                                  
+Current time once TimeZone TZ env variable set: 3/10/2019 2:13:57 AM       
+TimeZoneInfo.Local Offset:-06:00:00                                        
+Error:dateTime parameter is an invalid time Stack trace:  at System.TimeZon
+  at System.TimeZoneInfo.ConvertTime (System.DateTime dateTime, System.Time
+  at MonoDirList.Program.Main (System.String[] args) [0x00080] in <bf35b506
+ExitCode:99                                                                

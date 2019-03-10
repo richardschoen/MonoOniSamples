@@ -50,7 +50,11 @@ namespace MonoDirList
                 // Getting the current system timezone info. 
                 TimeZoneInfo tz = TimeZoneInfo.Local;
                 Console.WriteLine("TimeZoneInfo.Local Offset:" + tz.BaseUtcOffset);
-                Console.WriteLine("TimeonInfo.Local UTC Time:" + TimeZoneInfo.ConvertTime(DateTime.Now, tz).ToString());
+                Console.WriteLine("DateTime.Now:" + DateTime.Now.ToString());
+                // Removed below line. It started causing errors on Daylight savings time day. 3/10/2019 at 1am. See Notes.txt. Not sure why.
+                // TODO - test this scenario at some point. See if it works the day after dylight savings. Might be a Mono data bug possibly ??
+                // DateTime.Now by itself eems to work though as does using the same timezone def against files. Wierd.
+                //Console.WriteLine("TimeonInfo.Local UTC Time:" + TimeZoneInfo.ConvertTime(DateTime.Now, tz).ToString());
 
                 // Run DB2 command
                 PaseCommandHelper pase = new PaseCommandHelper();
