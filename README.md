@@ -30,7 +30,7 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunP
 **MonoXmlToCsv** - Sample for an XML file to a CSV file.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoXmlFileToCsv/MonoXmlFileToCsv
 
-**MonoDirList** - Sample of crawling IBM i IFS directory tree to list all objects in selected subdirectory and children to an IFS file and OUTFILE PF.
+**MonoDirList** - Sample of crawling IBM i IFS directory tree to list all objects in selected subdirectory and children to an IFS file and OUTFILE PF.<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoDirList/MonoDirList
 
 **Installing Samples in IFS Using Git**<br>
