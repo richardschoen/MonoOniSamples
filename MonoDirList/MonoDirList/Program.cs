@@ -54,6 +54,7 @@ namespace MonoDirList
                 // Removed below line. It started causing errors on Daylight savings time day. 3/10/2019 at 1am. See Notes.txt. Not sure why.
                 // TODO - test this scenario at some point. See if it works the day after dylight savings. Might be a Mono data bug possibly ??
                 // DateTime.Now by itself eems to work though as does using the same timezone def against files. Wierd.
+                // Problem only happens on IBMi when time between 010000 and 020000 on 3/10/2019 which way daylight savings time for 2019. 
                 //Console.WriteLine("TimeonInfo.Local UTC Time:" + TimeZoneInfo.ConvertTime(DateTime.Now, tz).ToString());
 
                 // Run DB2 command
