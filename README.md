@@ -27,6 +27,12 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoListTimeZones/Mo
 **MonoRunPase** - Sample for running db2 cli, CL system commands, Qshell or PASE commands from a .Net App.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
+**MonoXmlToCsv** - Sample for an XML file to a CSV file.<br> 
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoXmlFileToCsv/MonoXmlFileToCsv
+
+**MonoDirList** - Sample of crawling IBM i IFS directory tree to list all objects in selected subdirectory and children to an IFS file and OUTFILE PF.
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoDirList/MonoDirList
+
 **Installing Samples in IFS Using Git**<br>
 You can download the zip file from github and unzip the Visual Studio projects or install them in the IFS by using the following git command sequences to clone the repository.<br>
 

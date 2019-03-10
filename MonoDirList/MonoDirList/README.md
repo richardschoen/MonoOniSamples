@@ -12,7 +12,7 @@ DB2 outfile table in MONOTEMP library.<br>
 I crawled about 106000 files by listing /QOpenSys in about 2-3 minutes. Nice.<br>
 
 **Program parameters**<br>
-IFS directory to crawl/list. List attributes will be directory, file name, file size, file create date, changed date and last access date.<br>
+IFS directory to crawl/list - This is the directory to crawl. File list attributes will be directory, file name, file size, file create date, changed date and last access date.
 
 File filter - *.* for all files. (Note: This parm is not functional currently so always pass *.*. You can filter the OUTFILE with a query after.)
 
