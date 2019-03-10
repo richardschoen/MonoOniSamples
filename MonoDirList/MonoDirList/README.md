@@ -1,15 +1,17 @@
 ﻿# MonoRunPase
 
 **Overview**<br>
-This example is meant to show how to crawl a selected IFS directory tree.<br>
-Crawling a directory tree can be useful when looking for large IFS objects or trying <br>
-to determine overall IFS disk space usage. This process should avoid endless looping <br>
-potential issues by using the FileAttributes.Reparsepoint attribute to identify symbolic links during processing.<br>
+This example is meant to show how to crawl a selected IFS directory tree.
+Crawling a directory tree can be useful when looking for large IFS objects or trying 
+to determine overall IFS disk space usage. This process should avoid endless looping
+potential issues by using the FileAttributes.Reparsepoint attribute to identify symbolic 
+links during processing.
 The process is very quick so it has the ability to throttle itself and sleep as needed<br>
-during processing to avoid overloading the CPU. Results are placed in an IFS file and a DB2 outfile table in MONOTEMP library.<br>
+during processing to avoid overloading the CPU. Results are placed in an IFS file and a 
+DB2 outfile table in MONOTEMP library.<br>
 I crawled about 106000 files by listing /QOpenSys in about 2-3 minutes. Nice.<br>
 
-Program parameters:<br>
+**Program parameters**<br>
 IFS directory to crawl/list. List attributes will be directory, file name, file size, file create date, changed date and last access date.<br>
 
 File filter - *.* for all files. (Note: This parm is not functional currently so always pass *.*. You can filter the OUTFILE with a query after.)
@@ -66,7 +68,7 @@ If all ran successfully you should have a compiled EXE or DLL in your build dir 
 `/MonoOniSamples/MonoDirList/MonoDirList/bin/Debug`
 
 Change to EXE directory:<br>
-`cd /MonoOniSamples/MonoDirList/MonoDirList/bin/Debu`
+`cd /MonoOniSamples/MonoDirList/MonoDirList/bin/Debug`
 
 Run EXE:<br>
 `mono MonoDirList.exe "/tmp" "*.*" "true" "/tmp/filelist.txt" "true" "0"`
