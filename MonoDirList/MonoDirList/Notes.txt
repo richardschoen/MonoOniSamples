@@ -1,0 +1,30 @@
+﻿// TODO Notes 3/9/2019
+// TODO - Handle file filtering. Right now no matter what filter passed, all files are listed to output files 
+          and can be queried afterwards from the DB2 table if one was created.
+// TODO - Make PASE console logging for CL commands optional ? Set to true for now so extra log info in STDOUT.
+// TODO - Decide where to place output. Maybe a switch to create OUTFILE or NOT ?????
+
+
+// Sample sequence to move data to an OUTFILE after IFS dir list processing
+
+// Create MONOTEMP library
+system "CRTLIB LIB(MONOTEMP) AUT(*ALL)"
+
+// This sequence of commands can be used to run system commands to copy IFS result list 
+
+// Drop table from QP2TERM
+system "CALL PGM(QZDFMDB2) PARM('DROP TABLE monotemp.filelist2')" 
+
+// Create temp table from QP2TERM
+system "CALL PGM(QZDFMDB2) PARM('CREATE TABLE monotemp.monolistdir(DILEDIRTYP varchar(20),FILEDIRNAM varchar(255),
+DIRNAME varchar(255),FILENAME varchar(255),FILEEXT varchar(20),FILEDIRSIZ int,CRTTIME varchar(26),
+LSTWRTTIME varchar(26),LSTACCTIME varchar(26),CRTTIMEISO timestamp,LSTWRTISO timestamp,LSTACCISO timestamp)')"                       
+
+// Copy file list to physical file
+CPYFRMIMPF FROMSTMF('/tmp/filelist.txt')           
+           TOFILE(MONOTEMP/FILELIST2)              
+           MBROPT(*REPLACE)                        
+           RCDDLM(*CRLF)                           
+           FROMRCD(1)                              
+           RMVCOLNAM(*YES)
+		   
