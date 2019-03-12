@@ -1,0 +1,11 @@
+﻿Version Notes
+
+Version 1.0.1 - Initial release
+
+Feature Todos
+-Done - Create as a class library so Pase code is shareable among projects.
+-Done - Convert DB2 results to a DataTable,DataSet and/or List.
+-Done - Convert DB2 results to CSV, XML or JSON.
+-Retrieve CPF message from CL command completion
+
+

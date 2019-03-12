@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoPase", "MonoPase\MonoPase.csproj", "{EE05B198-947B-4E6C-86F9-1F741C99078A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoPaseTester", "MonoPaseTester\MonoPaseTester.csproj", "{5C6FFCD7-C6EC-4287-9D03-7017020D7CF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE05B198-947B-4E6C-86F9-1F741C99078A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE05B198-947B-4E6C-86F9-1F741C99078A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE05B198-947B-4E6C-86F9-1F741C99078A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE05B198-947B-4E6C-86F9-1F741C99078A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6FFCD7-C6EC-4287-9D03-7017020D7CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6FFCD7-C6EC-4287-9D03-7017020D7CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6FFCD7-C6EC-4287-9D03-7017020D7CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6FFCD7-C6EC-4287-9D03-7017020D7CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAF6D87B-5729-4249-B13E-D6EEA72E6865}
+	EndGlobalSection
+EndGlobal
