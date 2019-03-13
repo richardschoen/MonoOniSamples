@@ -1,0 +1,56 @@
+﻿// Problem sending secure mail via Office 365 with Mono. 
+// This works in Windows.
+
+MONO WORKDIR('/MonooniSamples/MonoMailSend')                  
+     EXEFILE(MonoMailSend.exe)                                
+     ARGS(user1@helpsystems.com user1@help  
+          systems.com ' ' ' ' 'Mailkit Test' 'This is the bo  
+          dy' ' ' ' ' smtp.office365.com 587 auto true user1  
+          @helpsystems.com pass01)               
+     DSPSTDOUT(*YES)                                          
+
+		Email error: An error occurred while attempting to establish an SSL or TLS 
+                                                                           
+The SSL certificate presented by the server is not trusted by the system for one or more of the following reasons:
+1. The server is using a self-signed certificate which cannot be verified. 
+2. The local system is missing a Root or Intermediate certificate needed to verify the server's certificate
+3. The certificate presented by the server is expired or invalid.          
+                                                                           
+See https://github.com/jstedfast/MailKit/blob/master/FAQ.md#InvalidSslCertificate for possible solutions.
+
+-------------------------------------------------------------------
+Resolution to above error.
+
+// Installing certificates to install above issues. Mono doesn't install automatically.
+// Note: Each user must install the certificate stores settings before SSL will work.
+
+Download root and intermediate certificate bundles and copy to an IFS location
+https://support.office.com/en-us/article/office-365-certificate-chains-0c03e6b3-e73f-4316-9e2b-bf4091ae96bb
+
+// Make sure openssl is installed and available in PASE or Qshell. 
+// Run following commands to convert the p7b cert files to pem format which mono needs.
+// This example assumes you're in the qp2term command line for PASE and your cert files are in /tmp
+
+cd /tmp
+mozroots --import --sync
+openssl pkcs7 -inform DER -in O365_Root_Certs_20170321.p7b --print-certs -out O365_Root_Certs_20170321.pem
+openssl pkcs7 -inform DER -in O365_Intermediate_Certs_20170321.p7b --print-certs -out O365_Intermediate_Certs_20170321.pem
+
+Run following commands to imports certs to the mono certificate store for your user:
+**Make sure /opt/mono/bin is in your search path. You can test by typing: cert-sync and see if you get feedback
+
+cd /tmp
+cert-sync --user O365_Root_Certs_20170321.pem
+cert-sync --user O365_Intermediate_Certs_20170321.pem
+
+// Run following to import most recent CA certificates extracted from Mozilla in PEM format
+
+From a web browser go to https://curl.haxx.se/docs/caextract.html and download latest cacert.pem 
+
+Place the cacert.pem file into /tmp on the IFS
+
+Run following commands to imports the certs to the mono certificate store for your user:
+**Make sure /opt/mono/bin is in your search path. You can test by typing: cert-sync and see if you get feedback
+
+cd /tmp
+cert-sync --user cacert.pem 

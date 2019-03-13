@@ -1,0 +1,10 @@
+﻿Dear So and So,
+
+This is line 1
+This is line 2
+This is line 3
+
+This is a URL: http://www.google.com
+
+Sincerely
+Me
