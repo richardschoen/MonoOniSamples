@@ -33,6 +33,9 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoXmlFileToCsv/Mon
 **MonoDirList** - Sample of crawling IBM i IFS directory tree to list all objects in selected subdirectory and children to an IFS file and OUTFILE PF.<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoDirList/MonoDirList
 
+**MonoMailSend** - Sample of sending email from an IBM i system using the Mailkit/Mimekit mail API which can be used to create text and html email messages. Send directly via Office365, Gmail or any other SMTP server.<br>
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoMailSend/MonoMailSend
+
 **Installing Samples in IFS Using Git**<br>
 You can download the zip file from github and unzip the Visual Studio projects or install them in the IFS by using the following git command sequences to clone the repository.<br>
 
