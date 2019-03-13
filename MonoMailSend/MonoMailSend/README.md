@@ -6,19 +6,19 @@ The program is a pretty functional production-ready email sender client app.
 <br>
 
 **Program parameters
-From email address
-One or more To email addresses delimited by semicolon;.
-One or more Cc email addresses delimited by semicolon;.
-One or more Bcc email addresses delimited by semicolon;.
-Subject line - Enter email subject line.
-Body text - Enter body text message. If you enter a <CRLF> tag in the text it will be expanded to a CR/LF in the text.
-Body file - If the file exists the text will get appended after the body text or if body text is blank, this is the message.
-SMTP host name or IP address (smtp.office365.com, smtp.gmail.com, etc.)
-SMTP port - 25/587, etc.
-SMTP authentication type - none, auto ????
-SMTP authentication enabled - True/False
-SMTP user if authentication enabled. Otherwise leave blank.
-SMTP password if authentication enabled. Otherwise leave blank.
+From email address.<br>
+One or more To email addresses delimited by semicolon;.<br>
+One or more Cc email addresses delimited by semicolon;.<br>
+One or more Bcc email addresses delimited by semicolon;.<br>
+Subject line - Enter email subject line.<br>
+Body text - Enter body text message. If you enter a <CRLF> tag in the text it will be expanded to a CR/LF in the text.<br>
+Body file - If the file exists the text will get appended after the body text or if body text is blank, this is the message.<br>
+SMTP host name or IP address (smtp.office365.com, smtp.gmail.com, etc.)<br>
+SMTP port - 25/587, etc.<br>
+SMTP authentication type - none, auto, sslonconnect, starttls, starttlswhenavailable. Normally use non for non-auth and auto for authenticated. See Mailkit docs with any deeper questions.<br>
+SMTP authentication enabled - True/False<br>
+SMTP user if authentication enabled. Otherwise leave blank.<br>
+SMTP password if authentication enabled. Otherwise leave blank.<br>
 
 **Running the program from a PASE or QSHELL command line screen**<br>
 `cd /MonoOniSamples/MonoMailSend/MonoMailSend/bin/Debug (or the directory where the EXE was created.)`
