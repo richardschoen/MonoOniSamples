@@ -5,22 +5,23 @@ This example is meant to show you how to use the IBM.Data.DB2.dll ADO.Net driver
 with Mono.Net on IBM i. The sample program exercises the DB2 database actions. The sample also uses Calvin Buckleys
 tweaked version of the IBM.Data.DB2 driver that will work with libdb400 under PASE in IBM i. 
 This version of the ADO.Net database driver only runs on an IBM i that has Mono .Net installed, so coding 
-cannot be directly tested against IBM i unless the compiled .Net binary is precompiled and places in the 
-IFS before running.
+cannot be directly tested against IBM i unless the compiled .Net binary is precompiled and placed in the 
+IFS before running using the mono command in PASE.
 <br>
 Github repo for IBM.Data.DB2.dll - DB2 LUW ADO.NET provider, adapted to work with libdb400 under IBM i 
 https://github.com/MonoOni/db2i-ado.net
 <br>
+Note: The IBM.Data.DB2.Dll binary is packaged in the dll folder under this project or you can build it yourself from the github link.
+<br>
 
-**Program parameters
-P1-DB2 Connection string. Example that should work on any IBM i with Mono .Net installed: DSN=*LOCAL;UID=CURRUSER; (where CURRUSER is the PASE IBMi user running the program)
+**Program parameters**<br>
+**P1-DB2 Connection string** Example that should work on any IBM i with Mono .Net installed: DSN=*LOCAL;UID=CURRUSER; (where CURRUSER is the PASE IBMi user running the program)<br>
 Blank connection string defaults to DSN=*LOCAL; (Current user id will be automatically derived from current user logged in.<br>
 Use WRKRDBDIRE command to find the *LOCAL entry name and other remote accessible database names. The DB2 driver should be able to access data on other IBM i systems.
 <br>
-P2-SQL SELECT query. Enter a query to use to select records. Recommended first test: select * from qiws.qcustcdt
+**P2-SQL SELECT query** Enter a query to use to select records. Recommended first test: select * from qiws.qcustcdt
 <br>
-P3-Maximum records to select. 0=All. Enter a value greater than one to limit the number of records read during a query to limit the records returned. Recommended first test: Use 10
-
+**P3-Maximum records to select** 0=All. Enter a value greater than one to limit the number of records read during a query to limit the records returned. Recommended first test: Use 10
 
 **Running the program from a PASE or QSHELL command line screen**<br>
 `cd /MonoOniSamples/MonoAdoNetConnect/MonoAdoNetConnect/bin/Debug (or the directory where the EXE was created.)`
