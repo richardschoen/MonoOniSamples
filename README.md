@@ -24,6 +24,9 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoHelloWorld/MonoH
 **MonoListTimeZones** - Sample for listing all the time zones available to a Mono .Net App since standard system values or PASE environment values don't work.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoListTimeZones/MonoListTimeZones
 
+**MonoAdoNetConnect** -  This is an app for testing the Calvins tweaked version of the IBM.DB2.Data.dll tweaked to work with libdb400 under IBM i PASE. Compile and run it to test your database access with .Net.<br>
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoAdoNetConnect/MonoAdoNetConnect
+
 **MonoRunPase** - Sample for running db2 cli, CL system commands, Qshell or PASE commands from a .Net App.<br> 
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoRunPase/MonoRunPase
 
