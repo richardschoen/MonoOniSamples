@@ -1,0 +1,31 @@
+﻿If you wish to compile the DB2 DLL yourself you can get it here:
+https://github.com/MonoOni/db2i-ado.net
+
+
+To use this example, you need to do the following to determine connection string to use:
+
+Sign on to IBMi command line
+
+Run WRKRDBDIRE command. (Work with Relational Database Directory Entries)
+
+Determine the Entry name for remote location: *LOCAL. This is the connection name
+for your local DB2 database. You should also be able to connect to other IBMi systems
+if they are listed in this table just by using it's Entry name and a user id as well.
+This will be handy for connecting to other IBMi systems from your .Net application code.
+
+Ex: If your *LOCAL database entry is called IBMI001 and you're logged in as QPGMR, then when 
+running the .Net program, your DB2 connection string will then be: 
+DSN=IBMI001;UID=QPGMR
+
+You can also simply try and it should work:
+DSN=*LOCAL;UID=QPGMR
+
+** Note: the only user that works is the current user so jobs must be submitted to 
+run under the user ID that has appropriate permissions to the database. In our
+example we will pick up the local user info.
+
+Sample usage with MONO CL command
+MONO WORKDIR('/MonoOniSamples/MonoAdoNetConnect/MonoAdoNetConnect/bin/Debug')  
+     EXEFILE(MonoAdoNetConnect.exe)                            
+     ARGS('DSN=*LOCAL;' 'select * from qiws.qcustcdt')     
+     DSPSTDOUT(*YES)                                         
