@@ -15,9 +15,10 @@ Note: The IBM.Data.DB2.Dll binary is packaged in the dll folder under this proje
 <br>
 
 **Program parameters**<br>
-**P1-DB2 Connection string** Example that should work on any IBM i with Mono .Net installed: DSN=*LOCAL;UID=CURRUSER; (where CURRUSER is the PASE IBMi user running the program)<br>
-Blank connection string defaults to DSN=*LOCAL; (Current user id will be automatically derived from current user logged in.<br>
-Use WRKRDBDIRE command to find the *LOCAL entry name and other remote accessible database names. The DB2 driver should be able to access data on other IBM i systems.
+**P1-DB2 Connection string** Example connection that should work on any IBM i with Mono .Net installed:<br>
+```DSN=*LOCAL;UID=CURRUSER;``` (where CURRUSER is the PASE IBMi user running the program)<br>
+Blank connection string defaults to ```DSN=*LOCAL;``` (Current user id will be automatically derived from current user logged in.<br>
+Use **WRKRDBDIRE** command to find the *LOCAL entry name and other remote accessible database names. The DB2 driver should be able to access data on other IBM i systems.
 <br>
 **P2-SQL SELECT query** Enter a query to use to select records. Recommended first test: select * from qiws.qcustcdt
 <br>
