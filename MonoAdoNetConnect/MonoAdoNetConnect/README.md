@@ -27,15 +27,15 @@ Use **WRKRDBDIRE** command to find the *LOCAL entry name and other remote access
 **Running the program from a PASE or QSHELL command line screen**<br>
 `cd /MonoOniSamples/MonoAdoNetConnect/MonoAdoNetConnect/bin/Debug (or the directory where the EXE was created.)`
 
-`mono MonoAdoNetConnect.exe "DSN=*LOCAL;" "select * from qiws.qcustcdt" "10" 
+`mono MonoAdoNetConnect.exe "DSN=*LOCAL;" "select * from qiws.qcustcdt" "10" `
 
 **Running the program using the MONO CL command**<br>
-```
+`
  MONO WORKDIR('/MonoOniSamples/MonoAdoNetConnect/MonoAdoNetConnect/bin/Debug')                    
      EXEFILE(MonoAdoNetConnect.exe)                                  
      ARGS('DSN=*LOCAL;' 'select * from qiws.qcustcdt' '10')
      DSPSTDOUT(*YES)                                            
-```
+`
 **Compiling and running this program solution**<br>
 
 1.) Build the solution from the PASE command line:
