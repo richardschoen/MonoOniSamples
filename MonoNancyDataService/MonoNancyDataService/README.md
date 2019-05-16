@@ -10,16 +10,16 @@ Nothing special should need to be loaded in order to use the db2 cli for data ac
 <br>
 
 **Prerequisites**<br>
-* The MONOI libary must exist on the IBMi. <br>
-Within the library the following objects are needed if the AUthEnabled setting = true:<br><br>
-* DB2 Table: MONOI.MNSESSIONS must be created from DDS or SQL source in the MONOI library.<br><br>
-* Program: MONOI.MNUSRCHK01 must be created from source in the MONOI library.<br><br>
+* The MONOI library V1.0.7 or above must exist on the IBM i system. <br>
+Within the MONOI library the following objects are needed if the AuthEnabled setting = true:<br><br>
+* DB2 Table: MONOI.MNSESSIONS must be created from DDS or SQL source in the MONOI library unless it was auto-created when running the MONOI SRCBLDC program.<br><br>
+* Program: MONOI.MNUSRCHK01 must be created from source in the MONOI library unless it was auto-created when running the MONOI SRCBLDC program.<br><br>
 
 **The .Net app AuthEnabled setting = false by default so auth is not required so any token value can be sent in the Authorization header until AuthEnabled = true. AuthEnabled should be set = true for any production usage.**<br>
 
-**When compiling to run natively on IBMi, uncomment the following line in Ibmiodule.cs to use db2 cli for data access:<br>
+**When compiling to run natively on IBM i, uncomment the following line in IbmiModule.cs to use db2 cli for data access:<br>
 ```#define MonoIbmi```
-**When compiling to run on Windows, comment out the following line in Ibmiodule.cs to use Client Access/400 ODBC for data access:<br>
+**When compiling to run on Windows, comment out the following line in IbmiModule.cs to use Client Access/400 ODBC for data access:<br>
 ```#define MonoIbmi```
 
 **Service Calls**<br>
@@ -120,7 +120,7 @@ If all works as expected you should see a list of messages displayed on the
 console saying the conversion worked successfully.
 
 2.) Compiling solution Using Visual Studio:<br>
-The easiest way to build this .Net code for IBMi is to compile locally on a PC in Visual Studio
+The easiest way to build this .Net code for IBM i is to compile locally on a PC in Visual Studio
 and then copy the EXE and any associated DLL files to the associated app directory in the IFS. 
 I typically put each app and DLL files in its own directory. This way each app can have different
 version of a class library or other DLL being used without worrying about DLL versioning issues.
