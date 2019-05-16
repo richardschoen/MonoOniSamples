@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MonoNancyDataService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Uri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:6050</Value>
+    </Setting>
+    <Setting Name="RewriteLocalHost" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ContentLoc" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">content</Value>
+    </Setting>
+    <Setting Name="ViewLoc" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">views</Value>
+    </Setting>
+    <Setting Name="HomePage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">index.htm</Value>
+    </Setting>
+    <Setting Name="SitePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Debug" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LogFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/tmp/mononancydataservice/MonoNancyDataServiceLog_@@DATE.txt</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Driver={Client Access ODBC Driver (32-bit)};System=1.1.1.1;Uid=IBMIUSER1;Pwd=IBMIPASS;</Value>
+    </Setting>
+    <Setting Name="AppDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mono Nancy Data Web Service</Value>
+    </Setting>
+    <Setting Name="HomePageContentType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">text/html</Value>
+    </Setting>
+    <Setting Name="SessionTable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MONOI.MNSESSIONS</Value>
+    </Setting>
+    <Setting Name="UserCheckProgram" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MONOI.MNUSRCHK01</Value>
+    </Setting>
+    <Setting Name="AuthEnabled" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AllowMultipleLogins" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TempDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/tmp/mononancydataservice</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
