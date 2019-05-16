@@ -39,6 +39,9 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoDirList/MonoDirL
 **MonoMailSend** -  This is a production ready mail sender command for sending email from an IBM i system using the Mailkit/Mimekit mail API which can be used to create text and html email messages. Send directly via Office365, Gmail or any other secure or unsecure SMTP server.<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoMailSend/MonoMailSend
 
+**MonoNancyDataService** -  This is a sample JSON based IBM i data microService service based on the C# NancyFx framework. This is a great way to make IBM i data and programs available to other web or mobile apps. Service can run in Windows or Native on IBM i. Can be front-ended for SSL with NGINX.<br>
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoNancyDataService/MonoNancyDataService
+
 **Installing Samples in IFS Using Git**<br>
 You can download the zip file from github and unzip the Visual Studio projects or install them in the IFS by using the following git command sequences to clone the repository.<br>
 
