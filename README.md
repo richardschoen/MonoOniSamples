@@ -42,7 +42,7 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoMailSend/MonoMai
 **MonoNancyDataService** -  This is a sample JSON based IBM i data microService service based on the C# NancyFx framework. This is a great way to make IBM i data and programs available to other web or mobile apps. Service can run in Windows or Native on IBM i. Can be front-ended for SSL with NGINX.<br>
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoNancyDataService/MonoNancyDataService
 
-**MonoOdbcConnect** -  This is a sample program to exercise the new IBM i Access ODBC Driver released in May 2019 from IBM.
+**MonoOdbcConnect** -  This is a sample program to exercise the new IBM i Access ODBC Driver for PASE released in May 2019 from IBM.
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoNancyDataService/MonoOdbcConnect
 
 **Installing Samples in IFS Using Git**<br>
