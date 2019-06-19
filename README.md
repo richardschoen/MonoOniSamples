@@ -43,7 +43,7 @@ https://github.com/richardschoen/MonoOniSamples/tree/master/MonoMailSend/MonoMai
 https://github.com/richardschoen/MonoOniSamples/tree/master/MonoNancyDataService/MonoNancyDataService
 
 **MonoOdbcConnect** -  This is a sample program to exercise the new IBM i Access ODBC Driver for PASE released in May 2019 from IBM.
-https://github.com/richardschoen/MonoOniSamples/tree/master/MonoNancyDataService/MonoOdbcConnect
+https://github.com/richardschoen/MonoOniSamples/tree/master/MonoOdbcConnect/MonoOdbcConnect
 
 **Installing Samples in IFS Using Git**<br>
 You can download the zip file from github and unzip the Visual Studio projects or install them in the IFS by using the following git command sequences to clone the repository.<br>
